@@ -29,6 +29,16 @@
 ---
 9. `git add .` **.**이란 작업수정한 모든 파일을 대기소(스테이지)에 올린다는 뜻. 만약 REDME.md만 올리고 싶을 경우 `git add REDME.md` 라고 명령어 입력하면 된다.
 10. `git status` 현재 스테이지 확인 명령
-11. `git commit -m ‘메세지기록’` 
-12. `git remote add origin ‘깃허브 저장소 주소’`
-13. git push origin main
+11. `git commit -m ‘메세지기록’`  현재 올리는 파일이 어떤 내용인지 기록
+12. `git remote add origin ‘깃허브 저장소 주소’` 깃허브 저장소 업로드 위치가 어디인지 주소 연결
+13. `git push origin main` 11번에서 커밋한 파일을 12번 저장소에 최종 업로드 하는 명령
+### 한번만 작성하면 끝인 깃 명령어
+* `git config` 이름, 이메일 설정
+* `git init` 저장소 설정
+* `git branch -M main` 저장소 이름
+* `git remote add origin` 저장소 주소 설정
+### 작업 시 깃허브 업로드를 위해 반복해야되는 깃 명령어
+* `git add .`
+* `git commit -m "기록메세지"`
+* `git push origin main`
+* 필요 시 중간 점검용으로 `git log` 또는 `git status`
