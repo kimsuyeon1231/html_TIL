@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login|Google</title>
+    <link rel="shortcut icon" href="../image/phone_img.png" type="image/x-icon">
+    <!-- 웹글꼴 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Reset -->
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/goole_login.css">
+    <style>
+        /* 내부 스타일 시트(HTML간 공유가 불가하므로 외부연결을 권장한다.) */
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <h1>Welcome back</h1>
+        <p>Welcome back! Please enter your details.</p>
+        <!-- form == block | 선택, 입력 양식을 묶는 그룹 -->
+        <form action="#" method="post" id="login_frm">
+            <fieldset class="id_pw_group"><!-- 블록 -->
+                <legend>입력양식</legend><!-- 인라인 -->
+                <dl>
+                    <dt>Email</dt>
+                    <dd><input type="text" name="user_email_id" id="user_email_id" class="id_pw" placeholder="Enter your email or id"></dd>
+                    <dt>password</dt>
+                    <dd><input type="password" name="user_pw" id="user_pw" class="id_pw"
+                    placeholder="Enter your password"></dd>
+                </dl>
+                <p class="error">please enter your ID</p>
+            </fieldset>
+            <fieldset class="btn_search_group">
+                <legend>버튼&찾기</legend>
+                <h2>Forgot password</h2>
+                <p><button type="submit" id="login_btn" class="btn">Login</button></p>
+                <p><a href="https://accounts.google.com/v3/signin/accountchooser?continue=https%3A%2F%2Fwww.google.com%2F&ec=futura_exp_og_so_72776762_e&hl=ko&ifkv=AdBytiMrbFXHbke-maPheHkTLuupTh0qKk64gmqItGKGyvnv4LIzbyXClvsfd21FKVKm43s4HDCItQ&passive=true&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-1573620781%3A1755489545712469" target="_blank" id="sign_google" class="btn">Sign in with Google</a></p>
+                <p class="account">Don’t have on account? <a href="https://accounts.google.com/lifecycle/steps/signup/name?continue=https://www.google.com/&dsh=S-1573620781:1755489545712469&ec=futura_exp_og_so_72776762_e&flowEntry=SignUp&flowName=GlifWebSignIn&hl=ko&ifkv=AdBytiMrbFXHbke-maPheHkTLuupTh0qKk64gmqItGKGyvnv4LIzbyXClvsfd21FKVKm43s4HDCItQ&TL=ALgCv6ys_7tfS5PlwRxgDRVDMXb0WKeVju90RSMYjVovlVceYwKGOCYtyJz1BJd9" class="sign_up">Sign up for free</a></p>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
