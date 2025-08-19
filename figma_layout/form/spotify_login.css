@@ -1,0 +1,111 @@
+body {
+    /* background: #222 url(https://i.pinimg.com/736x/0f/84/61/0f8461fcbb811e2b9e9ce266b65c60d7.jpg) no-repeat center 0 / contain; */
+    background-color: #222;
+    height: 100vh;
+    /* 배경이미지(background-image) 연습 */
+    /*  background-image:url(https://i.pinimg.com/736x/0f/84/61/0f8461fcbb811e2b9e9ce266b65c60d7.jpg);
+    background-repeat: no-repeat;
+    background-position:center 0;
+    background-size:contain; */
+    /* 배경이미지 통합 (특정 대상에 대한 선택자가 1개 일 때 사용) */
+    /* background : 색상 경로 반복 위치 / 크기; */
+}
+/* 로그인시작 */
+#login_wrap {
+    width: 500px;
+    /* 정렬, 크기, 여백 등의 값을 빠르게 체크하기 위한 목적으로 헥사코드가 아닌 테스트용도라는 뜻으로 영문명으로 색상을 입력하면서 배경색 및 테두리를 진행하고 최종 디자인 후 해당 값을 모두 제거한다. */
+    /* border: 2px solid aqua; */ /* 제거 */
+    margin: 0 auto; /* 상하 (0) 좌우 (auto) */
+    padding: 97px 0 0; /* 상(97) 좌우(0) 하(0) */
+}
+#login_wrap h1 {
+    text-align: center;
+    /* text-align 해석 : h1의 자식, 자손 중 인라인 요소(단순 글자 포함, 인라인 태그까지)를 가운데로 보내기 */
+    margin: 0 0 87px;
+}
+#login_wrap h1 a {}
+#login_wrap h1 a img {}
+/* 탭메뉴 */
+#login_wrap .tab_menu {
+    text-align: center;
+    margin:0 0 55px;
+}
+#login_wrap .tab_menu #sign_in {
+    margin-right: 136px;
+}
+#login_wrap .tab_menu #sign_up {}
+#login_wrap .tab_menu #sign_in ,
+#login_wrap .tab_menu #sign_up {
+    font-size: 1.25rem;
+    color: #fff;
+}/* in+up 그룹 */
+#login_wrap .tab_menu .active {
+    border-bottom: 3px solid #1ED760;
+    padding: 0 0 10px;
+    display : inline-block;
+    /* a inline 태그는 여백&크기 인식을 못하고 겹침현상 발생 ->해결 -> display:block 또는 inline-block */
+}/* 활성화 */
+/* SIGN IN */
+#login_wrap .sign_in_contents {
+}
+#login_wrap .sign_in_contents #in_frm {}
+    /* 아이디 비밀번호 입력 */
+#login_wrap .sign_in_contents #in_frm .id_pw_g {
+}
+#login_wrap .sign_in_contents #in_frm .id_pw_g li {
+    padding: 25px 40px; /* 상하(25) 좌우(40) */
+    border-radius: 36.5px;
+    background-color: #fff;
+}
+#login_wrap .sign_in_contents #in_frm .id_pw_g li .name_pw {width: 100%;}/* 공통 */
+#login_wrap .sign_in_contents #in_frm .id_pw_g li:nth-child(1) {margin:0 0 14px ;}
+#login_wrap .sign_in_contents #in_frm .id_pw_g li #user_name {}
+#login_wrap .sign_in_contents #in_frm .id_pw_g li #user_pw {}
+/* 체크박스 */
+#login_wrap .sign_in_contents #in_frm .login_status {
+    margin: 31px 0;
+}
+#login_wrap .sign_in_contents #in_frm .login_status #login_y {
+    margin:0 10px 0 0; /* 상(0)우(10)하(0)좌(0) */
+    /* input checkbox 또는 radio는 디자인을 다양하게 할 수 없기 때문에 태그는 준비하되 CSS 디자인 결과에서 보이지 않도록 숨겨두고 별도로 이미지를 준비해서 디자인한다. */
+    display: none;
+}
+#login_wrap .sign_in_contents #in_frm .login_status #login_y:checked+span {
+    /* 체크박스가 선택됐을 때(활성화) */
+    background-image: url(./image/check_on.svg);
+}
+#login_wrap .sign_in_contents #in_frm .login_status .chk_bg {
+    /* 이미지 태그는 삽입과 동시에 크기 인식 */
+    /* 배경이미지 CSS는 크기 자동인식(X), 필요한 모든 값은 수동입력 해야된다. */
+    /* 비활성화 */
+    background-image: url(./image/check_off.svg);
+    background-repeat: no-repeat;
+    width: 24px; height: 24px;
+    display: inline-block;
+    background-position: left top;
+}
+#login_wrap .sign_in_contents #in_frm .login_status label {
+    color: #fff;
+    transform: translateY(-6px);
+    display: inline-block;
+}
+    /* 로그인 버튼 */
+#login_wrap .sign_in_contents #in_frm .btn_forget {}
+#login_wrap .sign_in_contents #in_frm .btn_forget #sign_in_btn {
+    background-color: #1ED760;
+    width: 100%;
+    height: 73px;
+    border-radius: 36.5px;
+    color: #fff;
+    display: block;
+    margin: 0 0 14px;
+    font-weight: 700;
+}
+    /* 비밀번호 찾기 */
+#login_wrap .sign_in_contents #in_frm .btn_forget .forget_pw {
+    color: #fff;
+    text-align: center;
+    display: block;
+}
+/* SIGN UP */
+#login_wrap .sign_up_contents {}
