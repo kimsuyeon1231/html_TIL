@@ -20,22 +20,20 @@
             <a href="#"><img src="https://musescore.com/static/public/musescore/img/fb-login.svg" alt="페이스북 로그인"></a>
             <a href="#"><img src="https://musescore.com/static/public/musescore/img/apple-login.svg" alt="애플 로그인"></a>
         </div>
-        <div class="sign_in_contents">
+        <span>or</span>
+        <div class="sign_in">
             <form action="#" method="post" id="in_frm">
-                <ul class="id_pw_g">
-                    <li><input type="text" name="user_name" id="user_name" class="name_pw" placeholder="username"></li>
-                    <li><input type="password" name="user_pw" id="user_pw" class="name_pw" placeholder="password"></li>
+                <ul class="id">
+                    <li><p>Email or username</p></li>
+                    <li><input type="text" name="user_id" id="user_id" class="name_id"></li>
                 </ul>
-                <div class="login_status">
-                    <input type="checkbox" name="login_y_g" id="login_y">
-                    <!-- checkbox 대체용 배경이미지 적용태그 -->
-                    <span class="chk_bg"></span>
-                    <label for="login_y">stay signed in</label>
-                </div>
+                <ul class="pw">
+                    <li>password</li>
+                    <li>Forgot your password?</li>
+                    <li><input type="password" name="user_pw" id="user_pw" class="name_pw"></li>
+                </ul>
                 <div class="btn_forget">
-                    <button type="submit" id="sign_in_btn">SIGN IN</button>
-                    <a href="#" class="forget_pw">Forget password?</a>
-                </div>
+                    <button type="submit" id="sign_in_btn">Log in</button>
             </form>
         </div>
     </div>

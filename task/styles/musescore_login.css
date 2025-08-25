@@ -1,0 +1,28 @@
+#wrap {}
+#wrap h1 {
+    
+}
+#wrap h1 p {}
+#wrap .sns_login {}
+#wrap .sns_login a:first-child {}
+#wrap .sns_login a {}
+#wrap span {}
+#wrap .sign_in {}
+/* 입력창 통합 */
+#wrap .sign_in ul {background: chocolate;}
+#wrap .sign_in ul li {}
+#wrap .sign_in ul li p {}
+#wrap .sign_in ul li input {}
+/* 아이디 입력창 */
+#wrap .sign_in .id {}
+#wrap .sign_in .id li {}
+#wrap .sign_in .id li p {}
+#wrap .sign_in .id li #user_id {}
+/* 비밀번호 입력창 */
+#wrap .sign_in .pw {}
+#wrap .sign_in .pw li {}
+#wrap .sign_in .pw li p {}
+#wrap .sign_in .pw li #user_pw {}
+/* 버튼 */
+#wrap .btn_forget {}
+#wrap .btn_forget #sign_in_btn {}
