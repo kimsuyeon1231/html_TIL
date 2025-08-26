@@ -14,28 +14,31 @@
 <body>
     <div id="wrap">
         <h1><a href="#">Log in to musescore</a></h1>
-        <p>Don`t have an account? Sign Up</p>
-        <div class="sns_login">
-            <a href="#"><img src="./image/google-login.png" alt="구글 로그인">Continue with Google</a>
-            <a href="#"><img src="https://musescore.com/static/public/musescore/img/fb-login.svg" alt="페이스북 로그인"></a>
-            <a href="#"><img src="https://musescore.com/static/public/musescore/img/apple-login.svg" alt="애플 로그인"></a>
+        <p>Don`t have an account? <em>Sign Up</em></p>
+        <div class="login">
+            <div class="sns_login">
+                <a href="#"><img src="./images/google-login.png" alt="구글 로그인">Continue with Google</a>
+                <a href="#"><img src="https://musescore.com/static/public/musescore/img/fb-login.svg" alt="페이스북 로그인"></a>
+                <a href="#"><img src="https://musescore.com/static/public/musescore/img/apple-login.svg" alt="애플 로그인"></a>
+            </div>
         </div>
-        <span>or</span>
-        <div class="sign_in">
-            <form action="#" method="post" id="in_frm">
-                <ul class="id">
-                    <li><p>Email or username</p></li>
-                    <li><input type="text" name="user_id" id="user_id" class="name_id"></li>
-                </ul>
-                <ul class="pw">
-                    <li>password</li>
-                    <li>Forgot your password?</li>
-                    <li><input type="password" name="user_pw" id="user_pw" class="name_pw"></li>
-                </ul>
-                <div class="btn_forget">
-                    <button type="submit" id="sign_in_btn">Log in</button>
-            </form>
-        </div>
+                <span>or</span>
+            <div class="sign_in">
+                <form action="#" method="post" id="in_frm">
+                    <ul class="id">
+                        <li><p>Email or username</p></li>
+                        <li><input type="text" name="user_id" id="user_id" class="name_id"></li>
+                    </ul>
+                    <ul class="pw">
+                        <li><p>password</p></li>
+                        <li>Forgot your password?</li>
+                        <li><input type="password" name="user_pw" id="user_pw" class="name_pw"></li>
+                    </ul>
+                    <div class="btn_forget">
+                        <button type="submit" id="sign_in_btn">Log in</button>
+                    </div>
+                </form>
+            </div>
     </div>
 </body>
 </html>
