@@ -2,9 +2,12 @@
 :root {
     /* --대상-용도:반복속성값; */
     --text-title70:4.375rem;
+    --text-title40:2.5rem;
     --text-contens21:1.313rem;
     --text-menu18:1.125rem;
     --text-sub12:0.75rem;
+    --text-sub10:0.625rem;
+    --text-sub10:0.875rem;
 /* 행간 */
     --line-title:0.9;
     --line-contents:1.5;
@@ -20,11 +23,15 @@
     --color-title_coral:#d43936;
     --color-gray4:#444;
     --color-graya:#aaa;
+    --color-grayd:#ddd;
+    --color-point:#36b4e5;
+    --color-black:#000;
     /* 레이아웃 정보 */
     --width-desktop:1440px;
     --margin-desktop-1-r:80px;
 }
-#wrap {}
+body,html {scroll-behavior: smooth;}
+#wrap {padding-top: 92px;}
 #wrap header {
     padding: 0 80px;
     height: 92px;
@@ -32,7 +39,10 @@
     flex-flow:row nowrap; /* 메인축(수평) 줄바꿈 안함 */
     justify-content: space-between;/* 메인축 정렬(양쪽 끝) */
     align-items: center;/* 교차축(수직) 가운데 */
-    position: relative;/* lnb의 크기+위치 부모 기준 */
+    position: fixed;/* lnb의 크기+위치 부모 기준 */
+    z-index: 900; left: 0; top: 0;
+    width: 100%;/* fixed or absolute 너비값을 재설정해야한다. */
+    background: var(--color-white);
 }
 #wrap header h1 {}
 #wrap header h1 a {}
