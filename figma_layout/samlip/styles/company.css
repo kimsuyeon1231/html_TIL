@@ -1,0 +1,102 @@
+#wrap {}
+#wrap main {}
+#wrap main .path {
+    background: var(--color-grayfc);
+    padding: 0 80px 0; line-height: 40px; width: 100%;
+    font-size: var(--text-sub12); text-align: right;
+}/* 경로 */
+#wrap main .path a {}
+#wrap main .path img {}
+#wrap main .path em {}
+#wrap main h1, #wrap main > p {text-align: center;}
+#wrap main h1 {
+    font-size: var(--text-title40); font-weight: var(--weight-bold);
+    margin: 54px 0 26px;
+}
+#wrap main > p {
+    margin-bottom: 54px;
+    font-size: var(--text-menu18) ; color: var(--color-gray4);
+}
+#wrap main .fcfc {
+    background: var(--color-grayfc);
+    padding: 71px 0 71px;
+    display: flex; flex-flow: column nowrap; gap: 54px; align-items: center;
+}
+#wrap main .fcfc .Introduction {
+    display: flex; flex-flow: column nowrap; gap:26px; 
+    text-align: center;
+}
+#wrap main .fcfc .Introduction p {
+    font-size: var(--text-menu18); font-weight: var(--weight-medium); line-height: var(--line-contents);
+}
+/* 분할 */
+#wrap main .fcfc .vision2025 {}
+#wrap main .fcfc .vision {}
+#wrap main .fcfc .goal {}
+#wrap main .fcfc .strategy {}
+/* 파란색 부제목 */
+#wrap main .fcfc .vision2025 h2,
+#wrap main .fcfc .vision h2,
+#wrap main .fcfc .goal h2,
+#wrap main .fcfc .strategy h2 {
+    color: var(--color-point);
+    font-size: var(--text-contens21); line-height: var(--line-contents);
+    text-align: center; margin-bottom: 5px;
+    width: 1140px; margin: 0 auto; border-top: 1px solid var(--color-grayd);
+    padding-top: 54px;
+}
+/* 비전 내용 */
+#wrap main .fcfc .vision2025 p,
+#wrap main .fcfc .vision p {
+    font-size: var(--text-sub31); font-weight: var(--weight-medium); line-height: var(--line-contents); letter-spacing: var(--letter-minus2);
+    text-align: center;
+}
+/* goal 내용 */
+#wrap main .fcfc .goal .goal_circle {
+    display: flex; flex-flow: row nowrap; justify-content:center;
+}
+#wrap main .fcfc .goal ul {
+    width: 250px; height: 250px; text-align: center;
+    border-radius: 50%;
+    filter: drop-shadow(0 0 4px rgba(0,0,0,0.25));
+    display: flex; flex-flow: column nowrap; justify-content:center;
+    margin-right: -15px;
+}/* 통합 */
+#wrap main .fcfc .goal ul:first-child {background: var(--color-point); color: var(--color-white);}
+#wrap main .fcfc .goal ul:nth-child(2) {background: var(--color-white);}
+#wrap main .fcfc .goal ul:last-child {background: var(--color-yellow); color: var(--color-white);}
+#wrap main .fcfc .goal .goal_img {
+    margin: 0 auto; width: 50px; height: 50px;
+}
+#wrap main .fcfc .goal .goal_img2 {
+    filter:invert(100%);
+    margin: 0 auto; width: 50px; height: 50px;
+}
+#wrap main .fcfc .goal .goal_text {
+    font-size: var(--text-sub31); font-weight: var(--weight-medium); line-height: var(--line-contents); letter-spacing: var(--letter-minus2);
+    margin-top: 15px;
+}
+/* strategy 내용 */
+#wrap main .fcfc .strategy .strategy_circle {
+    border-radius: 50%;
+    display: flex; flex-flow: row wrap; justify-content:center;
+    margin-right: -5px;
+}
+#wrap main .fcfc .strategy ul {
+    background: var(--color-grayf1);
+    filter: drop-shadow(0 0 4px rgba(0,0,0,0.25));
+    border-radius: 50%;
+    display: flex; flex-flow: column nowrap; gap: 10px; align-items: center; justify-content:start;
+    width: 180px; height: 180px; padding: 40px 18px 0px;
+}
+#wrap main .fcfc .strategy ul li {
+    text-align: center;
+    margin: 0 auto;
+}
+#wrap main .fcfc .strategy ul li:nth-child(odd) {
+    text-decoration: underline;
+    font-size: var(--text-menu18); line-height: var(--line-contents); font-weight: var(--weight-bold);
+}
+#wrap main .fcfc .strategy ul li:nth-child(even) {
+    line-height: var(--line-contents);
+}

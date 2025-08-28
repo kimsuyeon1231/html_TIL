@@ -5,6 +5,7 @@
     --text-title40:2.5rem;
     --text-contens21:1.313rem;
     --text-menu18:1.125rem;
+    --text-sub31:1.938rem;
     --text-sub12:0.75rem;
     --text-sub10:0.625rem;
     --text-sub10:0.875rem;
@@ -16,6 +17,7 @@
 /* 굵기 */
     --weight-bold:700;
     --weight-semibold:600;
+    --weight-medium:500;
 /* 색상(테두리색, 배경색, 글자색 등) */
     --color-white:#fff;
     --color-title_brown:#642C10;
@@ -25,7 +27,10 @@
     --color-graya:#aaa;
     --color-grayd:#ddd;
     --color-point:#36b4e5;
+    --color-yellow:#f3c300;
     --color-black:#000;
+    --color-grayfc:#fcfcfc;
+    --color-grayf1:#f1f1f1;
     /* 레이아웃 정보 */
     --width-desktop:1440px;
     --margin-desktop-1-r:80px;
