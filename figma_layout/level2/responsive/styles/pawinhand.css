@@ -1,0 +1,77 @@
+#wrap {}
+#wrap header {
+    box-shadow: 0 0 10px rgba(0,0,0,0.25);
+}
+#wrap header .header_contents {
+    max-width: 1200px; height: 64px; margin: 0 auto;
+    background-color: yellow;
+    display: flex; flex-flow: row nowrap; justify-content:space-between; align-items:center; 
+}
+#wrap header .header_contents h1 {}
+#wrap header .header_contents h1 a {}
+#wrap header .header_contents > nav {}
+#wrap header .header_contents > nav a {margin-left: 20px;}
+#wrap header .header_contents > nav a:hover {font-weight: 700;}
+#wrap header .header_contents .m_nav {display: none;}
+#wrap header .header_contents .m_nav > a {}
+#wrap header .header_contents .m_nav > nav {}
+#wrap header .header_contents .m_nav > nav a {}
+#wrap main {}
+#wrap main #slide_wrap {
+    max-width: 1200px; overflow: hidden; margin: 0 auto;
+    position: relative;
+}
+#wrap main #slide_wrap .slide_container {
+    display: flex; width: max-content;
+}
+#wrap main #slide_wrap .slide_container .slide {
+    max-width: 1200px; width: 1200px; height: 650px;
+    background-size:cover;
+    background-position: center;
+}
+#wrap main #slide_wrap .slide_container .slide1 {background-image: url(https://images.unsplash.com/photo-1544568100-847a948585b9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzZ8fCVFQSVCMCU5NSVFQyU5NSU4NCVFQyVBNyU4MHxlbnwwfHwwfHx8MA%3D%3D);}
+#wrap main #slide_wrap .slide_container .slide2 {background-image: url(https://images.unsplash.com/photo-1534361960057-19889db9621e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8JUVBJUIwJTk1JUVDJTk1JTg0JUVDJUE3JTgwfGVufDB8fDB8fHww);}
+#wrap main #slide_wrap .slide_container .slide3 {background-image: url(https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fCVFQSVCMCU5NSVFQyU5NSU4NCVFQyVBNyU4MHxlbnwwfHwwfHx8MA%3D%3D);}
+#wrap main #slide_wrap .slide_container .slide4 {background-image: url(https://images.unsplash.com/photo-1453227588063-bb302b62f50b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fCVFQSVCMCU5NSVFQyU5NSU4NCVFQyVBNyU4MHxlbnwwfHwwfHx8MA%3D%3D);}
+#wrap main #slide_wrap .slide_container .slide5 {background-image: url(https://images.unsplash.com/photo-1597633425046-08f5110420b5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTJ8fCVFQSVCMCU5NSVFQyU5NSU4NCVFQyVBNyU4MHxlbnwwfHwwfHx8MA%3D%3D);}
+#wrap main #slide_wrap .slide_container .slide6 {background-image: url(https://images.unsplash.com/photo-1514984879728-be0aff75a6e8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTl8fCVFQSVCMCU5NSVFQyU5NSU4NCVFQyVBNyU4MHxlbnwwfHwwfHx8MA%3D%3D);}
+#wrap main #slide_wrap .slide_container .active {background-image: url(https://plus.unsplash.com/premium_photo-1669277330818-c5cc14e5dfea?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Njl8fCVFQSVCMCU5NSVFQyU5NSU4NCVFQyVBNyU4MHxlbnwwfHwwfHx8MA%3D%3D);}
+#wrap main #slide_wrap .prew {left: 0;}
+#wrap main #slide_wrap .next {right: 0;}
+#wrap main #slide_wrap .prev, #wrap main #slide_wrap .next {
+    position: absolute; top: 313px;
+}
+#wrap main #slide_wrap .pagenation {
+    background: aqua;
+    position: absolute;
+    bottom: 31px; left: 0;
+    width: 100%; text-align: center;
+}
+#wrap main #slide_wrap .pagenation span {
+}
+#wrap main #slide_wrap .pagenation span.active {}
+/* ----------------------2행 소개 */
+#wrap main .info {
+    background-color: yellow;
+    display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: center;
+    max-width: 1200px; margin: 0 auto; padding: 50px 0;
+    height: 270px;
+}
+#wrap main .info a {
+    width: 100px; height: 100px;
+    border: 1px solid #000;
+    border-radius: 50%; line-height: 100px; text-align: center;
+}
+#wrap main .info a:hover {
+    width: 170px; height: 170px; line-height: 170px;
+}
+/* ----------------------3행 입양문의 */
+#wrap main .inquiry {}
+#wrap main .inquiry h2 {}
+#wrap main .inquiry #adoption_frm {}
+#wrap main .inquiry #adoption_frm input[type=text],
+#wrap main .inquiry #adoption_frm input[type=number],
+#wrap main .inquiry #adoption_frm textarea#content {
+    background: gray; width: 100%;
+}
+#wrap main .inquiry #adoption_frm #inquiry_btn {}
