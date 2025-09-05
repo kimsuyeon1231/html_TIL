@@ -69,7 +69,25 @@
         main .category a.active {background:#26bad7; color:#fff;}
 
         /* 애니메이션 */
-
+        main #visual #deco .obj2,
+        main #visual #deco .obj4,
+        main #visual #deco .obj9 {animation: move1 3s  linear infinite;}
+        main #visual #deco .obj1,
+        main #visual #deco .obj3,
+        main #visual #deco .obj6,
+        main #visual #deco .obj7,
+        main #visual #deco .obj8 {animation: move2 10s  linear infinite;}
+        main #visual #deco .obj5 {animation: move2 2s  linear alternate-reverse/* 역방향 */ infinite;}
+        @keyframes move1 {
+            0%{transform: scale(1);}
+            50%{transform: scale(1.5);}
+            100%{transform: scale(1);}
+        }
+        @keyframes move2 {
+            0%{transform: rotate(0);}
+            50%{transform: rotate(20deg);}
+            100%{transform: rotate(0);}
+        }
     </style>
 </head>
 <body>

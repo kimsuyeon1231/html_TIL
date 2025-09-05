@@ -34,6 +34,16 @@
         /* class */
 
         /* animation */
+        .slide_wrap .slide_c .slide1  {animation: bg 2s linear both;}
+        .slide_wrap .slide_c .slide1 p {animation: solaseado 1.5s ease both;}
+        @keyframes bg{
+            0% {background-size: 100% auto;}
+            100% {background-size: 120% auto;}
+        }
+        @keyframes solaseado{
+            0% {opacity: 0; transformY:(0) scale(1);}
+            100% {opacity: 1; transformY:(-30px) scale(1.2);}
+        }
 
     </style>
     <script>
